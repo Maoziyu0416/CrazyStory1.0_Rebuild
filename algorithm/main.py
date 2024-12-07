@@ -178,9 +178,10 @@ class Game:
         '''
         for e in self.event_log:
             self.player_events[self.players[0]].append(e)
+        '''
         while len(self.alive_players) >= 2:
             self.choose_event()
-        '''
+
 
     def choose_event(self):
         if len(self.alive_players) < 2:
